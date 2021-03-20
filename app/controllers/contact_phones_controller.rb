@@ -20,11 +20,11 @@ class ContactPhonesController < ApplicationController
 
     respond_to do |format|
       if @contact_phone.save
-        format.html { redirect_to @contact_phone, notice: "Contact phone was successfully created." }
-        format.json { render :show, status: :created, location: @contact_phone }
+        format.html {redirect_to @contact_phone, notice: "Contact phone was successfully created." }
+        
       else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @contact_phone.errors, status: :unprocessable_entity }
+        format.html {render :new, status: :unprocessable_entity }
+        
       end
     end
   end
@@ -32,11 +32,9 @@ class ContactPhonesController < ApplicationController
   def update
     respond_to do |format|
       if @contact_phone.update(contact_phone_params)
-        format.html { redirect_to @contact_phone, notice: "Contact phone was successfully updated." }
-        format.json { render :show, status: :ok, location: @contact_phone }
+        format.html {redirect_to @contact_phone, notice: "Contact phone was successfully updated." }
       else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @contact_phone.errors, status: :unprocessable_entity }
+        format.html { render :edit, status: :unprocessable_entity} 
       end
     end
   end
@@ -46,7 +44,7 @@ class ContactPhonesController < ApplicationController
     @contact_phone.destroy
     respond_to do |format|
       format.html { redirect_to contact_phones_url, notice: "Contact phone was successfully destroyed." }
-      format.json { head :no_content }
+      
     end
   end
 

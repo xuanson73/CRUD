@@ -1,13 +1,20 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 .header1{
         color:red;
         text-align: center;
     }
-
-    div.field{
-
-    }
-    .actions{
-    margin-bottom: 20px; 
-    color:yellow
-    }
+.Header-new{
+    color:red;
+    text-align: center;
+   
+}
+.new{
+    text-align: center;
+    color:rgb(138, 36, 11);
+}
+.field
+{
+    border-color: rgb(30, 30, 235);
+}

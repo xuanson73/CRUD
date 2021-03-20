@@ -10,7 +10,7 @@
       </ul>
     </div>
   <% end %>
-
+<div class="content-field">
   <div class="field">
     <%= form.label :name %>
     <%= form.text_field :name %>
@@ -26,7 +26,8 @@
     <%= form.text_field :phone %>
   </div>
 
-  <div class="actions">
-    <%= form.submit :Create %>
+  <div class="btn btn-outline-info">
+    <%= form.submit "Create" %>
   </div>
+</div>
 <% end %>

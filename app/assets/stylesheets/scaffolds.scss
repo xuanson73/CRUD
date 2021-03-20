@@ -1,5 +1,6 @@
 body {
-  background-color: rgb(79, 82, 112);
+  background-image: url("backgr.png");
+  
   color: #333;
   margin: 33px; }
 
@@ -17,11 +18,12 @@ a {
   color: #000; }
 
 a:visited {
-  color: #666; }
+  color: black; }
 
 a:hover {
-  color: #fff;
-  background-color: rgb(31, 100, 25); }
+  color: rgb(90, 11, 6);
+  background-color: rgb(109, 109, 221);
+ }
 
 th {
   padding-bottom: 5px; }
@@ -30,7 +32,7 @@ td {
   padding: 0 5px 7px; }
 
 #notice {
-  color: green; }
+  color:rgb(64, 64, 228); }
 
 .field_with_errors {
   padding: 2px;
