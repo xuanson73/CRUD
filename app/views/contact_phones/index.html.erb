@@ -1,7 +1,5 @@
 <p id="notice"><%= notice %></p>
-
-<h1 class="header1"> Danh bạ</h1>
-
+<h1 class="header1">Danh bạ</h1>
 <table class="table">
   <thead>
     <tr>
@@ -11,7 +9,8 @@
       <th colspan="3"></th>
     </tr>
   </thead>
-
+    <p><%= link_to "English", locale:"en" %></p>
+    <p><%= link_to "Vietnamese", locale:"vi" %></p>
   <tbody>
     <% @contact_phones.each do |contact_phone| %>
       <tr>
@@ -25,7 +24,5 @@
     <% end %>
   </tbody>
 </table>
-
 <br>
-
-<%= link_to 'New Contact', new_contact_phone_path %>
+<%= link_to 'New Contact', new_contact_phone_path,:class => 'btn btn-lg btn-primary' %>

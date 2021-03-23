@@ -1,9 +1,7 @@
 <div class="new">
-
-<h1 class="Header-new"> MY CONTACT</h1>
-
-<%= render 'form', contact_phone: @contact_phone %>
-
-<%= link_to 'List Contact', contact_phones_path %>
-
+    <h1 class="Header-new"> MY CONTACT</h1>
+    <%= render 'form', contact_phone: @contact_phone %>
+    <%= link_to 'List Contact', contact_phones_path %>
+    <br><%= link_to "English", locale:"en" %>
+    <br><%= link_to "Vietnamese", locale:"vi" %>
 </div>

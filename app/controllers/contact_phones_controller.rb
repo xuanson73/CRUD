@@ -17,14 +17,11 @@ class ContactPhonesController < ApplicationController
 
   def create
     @contact_phone = ContactPhone.new(contact_phone_params)
-
     respond_to do |format|
       if @contact_phone.save
-        format.html {redirect_to @contact_phone, notice: "Contact phone was successfully created." }
-        
+        format.html {redirect_to @contact_phone, notice: "Contact phone was successfully created." } 
       else
         format.html {render :new, status: :unprocessable_entity }
-        
       end
     end
   end
@@ -39,22 +36,20 @@ class ContactPhonesController < ApplicationController
     end
   end
 
-  
   def destroy
     @contact_phone.destroy
     respond_to do |format|
       format.html { redirect_to contact_phones_url, notice: "Contact phone was successfully destroyed." }
-      
     end
   end
 
   private
+
     def set_contact_phone
       @contact_phone = ContactPhone.find(params[:id])
     end
 
-  
     def contact_phone_params
-      params.require(:contact_phone).permit(:name, :email, :phone)
+      params.require(:contact_phone).permit( :name, :email, :phone)
     end
 end
