@@ -2,7 +2,6 @@
   <% if contact_phone.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(contact_phone.errors.count, "error") %> prohibited this contact_phone from being saved:</h2>
-
       <ul>
         <% contact_phone.errors.each do |error| %>
           <li><%= error.full_message %></li>
@@ -27,7 +26,7 @@
   </div>
 
   <div class="btn btn-outline-info">
-    <%= form.submit "Create" %>
+    <%= form.submit :Create %>
   </div>
 </div>
 <% end %>

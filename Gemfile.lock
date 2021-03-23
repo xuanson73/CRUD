@@ -64,14 +64,13 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     autoprefixer-rails (10.2.4.0)
       execjs
+    bcrypt (3.1.16)
     bindex (0.8.1)
     bootsnap (1.7.2)
       msgpack (~> 1.0)
     bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
       sassc (>= 2.0.0)
-    bootstrap-will_paginate (0.0.10)
-      will_paginate
     builder (3.2.4)
     byebug (11.1.3)
     capybara (3.35.3)
@@ -147,6 +146,7 @@ GEM
       rake (>= 0.8.7)
       thor (~> 1.0)
     rake (13.0.3)
+    redis (4.2.5)
     regexp_parser (2.1.1)
     rubyzip (2.3.0)
     sass-rails (6.0.0)
@@ -197,7 +197,6 @@ GEM
     websocket-driver (0.7.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
-    will_paginate (3.0.7)
     xpath (3.2.0)
       nokogiri (~> 1.8)
     zeitwerk (2.4.2)
@@ -206,15 +205,16 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   bootsnap (>= 1.4.4)
   bootstrap-sass (~> 3.4, >= 3.4.1)
-  bootstrap-will_paginate (= 0.0.10)
   byebug
   capybara (>= 3.26)
   jbuilder (~> 2.7)
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.3)
+  redis (~> 4.0)
   sass-rails (>= 6)
   selenium-webdriver
   sprockets-rails (~> 3.2, >= 3.2.2)
@@ -224,7 +224,6 @@ DEPENDENCIES
   web-console (>= 4.1.0)
   webdrivers
   webpacker (~> 5.0)
-  will_paginate (= 3.0.7)
 
 RUBY VERSION
    ruby 2.7.2p137
