@@ -53,3 +53,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 gem 'sprockets-rails', '~> 3.2', '>= 3.2.2'
+gem 'i18n', '~> 1.8', '>= 1.8.9'
